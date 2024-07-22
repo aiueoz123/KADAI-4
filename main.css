@@ -1,136 +1,85 @@
-/* main.css */
+/* Reset some default styles */
+body, h1, h2, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: Arial, sans-serif;
+}
 
+/* Basic styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-  color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-h1, h2 {
-  color: #333333;
-  margin-top: 20px;
-}
-
+/* Colorful styles */
 h1 {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 2em;
-  color: #ff6347; /* トマト色 */
+    font-size: 2em;
+    color: #ff4500; /* OrangeRed */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h2 {
-  margin-top: 30px;
-  color: #4682b4; /* スチールブルー */
-  font-size: 1.5em;
+    font-size: 1.5em;
+    color: #ff6347; /* Tomato */
+    margin-bottom: 10px;
 }
 
-p {
-  margin: 10px 0;
-  padding: 0 20px;
-  color: #555555;
-}
-
-ul, ol {
-  margin: 10px 20px;
-  padding: 0 20px;
-  color: #555555;
-}
-
-ul li, ol li {
-  margin-bottom: 10px;
+p, li {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 a {
-  color: #4682b4; /* スチールブルー */
-  text-decoration: none;
+    color: #ff4500; /* OrangeRed */
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
+/* Responsive images */
 img {
-  display: block;
-  margin: 20px auto;
-  border: 2px solid #ddd;
-  border-radius: 5px;
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ff6347; /* Tomato */
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-header {
-  background: #4682b4; /* スチールブルー */
-  color: #ffffff;
-  padding: 1rem 0;
-  text-align: center;
+/* List styles */
+ul {
+    padding-left: 20px;
 }
 
-footer {
-  background: #4682b4; /* スチールブルー */
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+li {
+    margin-bottom: 10px;
 }
 
-main {
-  padding: 1rem;
-}
-
-section {
-  margin-bottom: 1.5rem;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
-/* レスポンシブデザインの追加 */
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1.5em;
-    margin-top: 20px;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  p, ul, ol {
-    padding: 0 10px;
-  }
-
-  footer {
-    font-size: 0.8em;
-  }
-}
-
+/* Responsive layout */
 @media (min-width: 600px) {
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 
-@media (min-width: 800px) {
-  h1 {
-    font-size: 2.5em;
-  }
+/* Media queries for smaller screens */
+@media (max-width: 599px) {
+    h1 {
+        font-size: 1.5em;
+    }
 
-  h2 {
-    font-size: 2em;
-  }
+    h2 {
+        font-size: 1.2em;
+    }
 
-  p, ul, ol {
-    padding: 0 30px;
-  }
+    p, li {
+        font-size: 0.9em;
+    }
 }
