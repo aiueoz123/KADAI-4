@@ -1,85 +1,40 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, ol, li, a {
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
-    color: inherit;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* Basic styles */
+/* Global styles */
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     line-height: 1.6;
     padding: 20px;
-    background-color: #fff5e6; /* Light orange background */
 }
 
-/* Colorful styles */
-h1 {
-    font-size: 2em;
-    color: #ff4500; /* OrangeRed */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 1.5em;
-    color: #ff6347; /* Tomato */
-    margin-bottom: 10px;
+header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
-p, li {
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 10px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-a {
-    color: #ff4500; /* OrangeRed */
+nav ul li {
+    display: inline;
+    margin-right: 10px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive images */
-img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ff6347; /* Tomato */
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* List styles */
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-/* Responsive layout */
-@media (min-width: 600px) {
-    body {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-}
-
-/* Media queries for smaller screens */
-@media (max-width: 599px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    p, li {
-        font-size: 0.9em;
-    }
-}
+nav ul li a {
+    color: #f
